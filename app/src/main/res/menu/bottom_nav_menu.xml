@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_order"
+        android:icon="@drawable/ic_order_black_24dp"
+        android:title="@string/title_order" />
+    <item
+        android:id="@+id/navigation_go_out"
+        android:icon="@drawable/ic_go_out_black_24dp"
+        android:title="@string/title_go_out" />
+    <item
+        android:id="@+id/navigation_entertain"
+        android:icon="@drawable/ic_entertain_black_24dp"
+        android:title="@string/title_entertain" />
+    <item
+        android:id="@+id/navigation_explore"
+        android:icon="@drawable/ic_explore_black_24dp"
+        android:title="@string/title_explore" />
+    <item
+        android:id="@+id/navigation_spaces"
+        android:icon="@drawable/ic_spaces_black_24dp"
+        android:title="@string/title_spaces" />
+</menu>

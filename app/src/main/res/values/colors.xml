@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF6E6E</color>
+    <color name="colorPrimaryDark">#F8F8F8</color>
+    <color name="colorAccent">#FFD740</color>
+    <color name="colorRose">#FF6E6E</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorNormalWhite">#FAFAFA</color>
+    <color name="colorTrafficWhite">#F8F8F8</color>
+    <color name="colorGraniteGray">#2F3136</color>
+    <color name="colorBlackBrown">#2F3136</color>
+    <color name="colorDash">#707070</color>
+    <!--Light theme colors-->
+    <color name="colorPrimaryThemeLight">#FF6E6E</color>
+    <color name="colorPrimaryDarkThemeLight">#F8F8F8</color>
+    <color name="colorAccentThemeLight">#FFD740</color>
+    <!--Dark theme colors-->
+    <color name="colorPrimaryThemeDark">#2F3136</color>
+    <color name="colorPrimaryDarkThemeDark">#2F3136</color>
+    <color name="colorAccentThemeDark">#FFD740</color>
+</resources>

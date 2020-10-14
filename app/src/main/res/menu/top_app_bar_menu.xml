@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/day_night_toggle"
+        android:contentDescription="@string/day_night_content_description"
+        android:icon="@drawable/ic_daynight_toogle_24dp"
+        android:title="@string/day_night_title"
+        app:showAsAction="ifRoom" />
+</menu>

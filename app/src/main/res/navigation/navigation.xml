@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/navigation_order">
+
+    <fragment
+        android:id="@+id/navigation_order"
+        android:name="com.codinginflow.foodingo.ui.order.OrderFragment"
+        android:label="order_fragment"
+        tools:layout="@layout/order_fragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_go_out"
+        android:name="com.codinginflow.foodingo.ui.goout.GoOutFragment"
+        android:label="go_out_fragment"
+        tools:layout="@layout/go_out_fragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_entertain"
+        android:name="com.codinginflow.foodingo.ui.entertain.EntertainFragment"
+        android:label="entertain_fragment"
+        tools:layout="@layout/entertain_fragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_explore"
+        android:name="com.codinginflow.foodingo.ui.explore.ExploreFragment"
+        android:label="explore_fragment"
+        tools:layout="@layout/explore_fragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_spaces"
+        android:name="com.codinginflow.foodingo.ui.spaces.SpacesFragment"
+        android:label="spaces_fragment"
+        tools:layout="@layout/spaces_fragment">
+
+    </fragment>
+
+</navigation>
