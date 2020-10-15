@@ -9,10 +9,13 @@
     <string name="title_spaces">Spaces</string>
     <string name="day_night_content_description">Switch between light and dark theme</string>
     <string name="day_night_title">Day night</string>
+    <string name="user_profile_content_descript">User profile image</string>
+    <string name="user_profile_title">User profile</string>
+    <string name="translate">Translate</string>
+    <!---->
     <string name="profile_image">Profile Image</string>
     <string name="language">Language</string>
     <string name="search_location">Search Location</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <!---->
 </resources>
