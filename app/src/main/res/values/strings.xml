@@ -9,5 +9,8 @@
     <string name="title_spaces">Spaces</string>
     <string name="day_night_content_description">Switch between light and dark theme</string>
     <string name="day_night_title">Day night</string>
+    <string name="user_profile_content_descript">User profile image</string>
+    <string name="user_profile_title">User profile</string>
+    <string name="translate">Translate</string>
     <!---->
 </resources>

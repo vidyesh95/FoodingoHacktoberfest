@@ -13,14 +13,13 @@
         <com.google.android.material.appbar.MaterialToolbar
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/colorNormalWhite"
-            app:menu="@menu/top_app_bar_menu"/>
+            android:background="@color/colorWhite"
+            app:logo="@drawable/ic_location24dp"
+            app:menu="@menu/top_app_bar_menu" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
     </androidx.core.widget.NestedScrollView>
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

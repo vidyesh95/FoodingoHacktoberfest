@@ -3,9 +3,24 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/translate"
+        android:contentDescription="@string/translate"
+        android:icon="@drawable/ic_translate24dp"
+        android:title="@string/translate"
+        app:showAsAction="ifRoom" />
+
+    <item
         android:id="@+id/day_night_toggle"
         android:contentDescription="@string/day_night_content_description"
         android:icon="@drawable/ic_daynight_toogle_24dp"
         android:title="@string/day_night_title"
         app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/user_profile"
+        android:contentDescription="@string/user_profile_content_descript"
+        android:icon="@drawable/profile_image"
+        android:title="@string/user_profile_title"
+        app:showAsAction="ifRoom" />
+
 </menu>
