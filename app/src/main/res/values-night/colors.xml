@@ -19,13 +19,13 @@
     <color name="colorPrimaryDarkThemeDark">#2F3136</color>
     <color name="colorAccentThemeDark">#FFD740</color>
 
-    <color name="colorIconTint">#000000</color>
-    <color name="colorText">#000000</color>
+    <color name="colorIconTint">#FFFFFF</color>
+    <color name="colorText">#FFFFFF</color>
 
     <!--Toolbar Background-->
-    <color name="colorToolbar">#FAFAFA</color>
+    <color name="colorToolbar">#2F3136</color>
 
     <!--Bottom App Bar-->
-    <color name="stateChecked">#FF6E6E</color>
-    <color name="stateUnChecked">#6E6A6A</color>
+    <color name="stateChecked">#FFFFFF</color>
+    <color name="stateUnChecked">#A39A9A</color>
 </resources>
