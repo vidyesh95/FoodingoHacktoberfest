@@ -3,9 +3,27 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/language"
+        android:contentDescription="@string/day_night_content_description"
+        android:icon="@drawable/ic_language"
+        android:title="@string/language"
+        app:showAsAction="always"
+        android:iconTint="@color/colorIconTint"/>
+
+    <item
         android:id="@+id/day_night_toggle"
         android:contentDescription="@string/day_night_content_description"
         android:icon="@drawable/ic_daynight_toogle_24dp"
         android:title="@string/day_night_title"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/profile_image"
+        android:contentDescription="@string/day_night_content_description"
+        android:icon="@drawable/account"
+        android:title="@string/profile_image"
+        app:showAsAction="always"
+        android:iconTint="@color/colorIconTint"/>
+
 </menu>

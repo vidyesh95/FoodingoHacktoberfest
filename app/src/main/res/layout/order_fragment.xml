@@ -11,10 +11,30 @@
         android:layout_height="wrap_content">
 
         <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/colorNormalWhite"
-            app:menu="@menu/top_app_bar_menu"/>
+            android:background="@color/colorToolbar"
+            app:menu="@menu/top_app_bar_menu"
+            app:contentInsetStart="0dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_location24dp"
+                android:backgroundTint="@color/colorIconTint"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:text="Borivali, Mumbai, Maharashtra"
+                android:textColor="@color/colorText"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+        </com.google.android.material.appbar.MaterialToolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView
