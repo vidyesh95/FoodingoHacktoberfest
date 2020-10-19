@@ -1,32 +1,21 @@
 package com.codinginflow.foodingo.ui.explore
 
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import com.codinginflow.foodingo.R
+import com.codinginflow.foodingo.abstraction.BaseFragment
+import com.codinginflow.foodingo.databinding.ExploreFragmentBinding
 
-class ExploreFragment : Fragment() {
+class ExploreFragment : BaseFragment<ExploreFragmentBinding, ExploreViewModel>() {
 
     companion object {
         fun newInstance() = ExploreFragment()
     }
 
-    private lateinit var viewModel: ExploreViewModel
+    override fun layoutResourceId(): Int = R.layout.explore_fragment
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.explore_fragment, container, false)
-    }
+    override fun getViewModelClass(): Class<ExploreViewModel> = ExploreViewModel::class.java
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(ExploreViewModel::class.java)
-        // TODO: Use the ViewModel
+    override fun initViewCreated() {
+        // TODO: Start your code here
     }
 
 }

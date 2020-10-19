@@ -1,32 +1,21 @@
 package com.codinginflow.foodingo.ui.entertain
 
-import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.lifecycle.ViewModelProvider
 import com.codinginflow.foodingo.R
+import com.codinginflow.foodingo.abstraction.BaseFragment
+import com.codinginflow.foodingo.databinding.EntertainFragmentBinding
 
-class EntertainFragment : Fragment() {
+class EntertainFragment : BaseFragment<EntertainFragmentBinding, EntertainViewModel>() {
 
     companion object {
         fun newInstance() = EntertainFragment()
     }
 
-    private lateinit var viewModel: EntertainViewModel
+    override fun layoutResourceId(): Int = R.layout.entertain_fragment
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.entertain_fragment, container, false)
-    }
+    override fun getViewModelClass(): Class<EntertainViewModel> = EntertainViewModel::class.java
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(EntertainViewModel::class.java)
-        // TODO: Use the ViewModel
+    override fun initViewCreated() {
+        // TODO: Start your code here
     }
 
 }

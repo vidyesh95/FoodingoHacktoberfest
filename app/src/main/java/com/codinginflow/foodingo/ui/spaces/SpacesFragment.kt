@@ -1,32 +1,21 @@
 package com.codinginflow.foodingo.ui.spaces
 
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import com.codinginflow.foodingo.R
+import com.codinginflow.foodingo.abstraction.BaseFragment
+import com.codinginflow.foodingo.databinding.SpacesFragmentBinding
 
-class SpacesFragment : Fragment() {
+class SpacesFragment : BaseFragment<SpacesFragmentBinding, SpacesViewModel>() {
 
     companion object {
         fun newInstance() = SpacesFragment()
     }
 
-    private lateinit var viewModel: SpacesViewModel
+    override fun layoutResourceId(): Int = R.layout.spaces_fragment
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.spaces_fragment, container, false)
-    }
+    override fun getViewModelClass(): Class<SpacesViewModel> = SpacesViewModel::class.java
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(SpacesViewModel::class.java)
-        // TODO: Use the ViewModel
+    override fun initViewCreated() {
+        // TODO: Start your code here
     }
 
 }
