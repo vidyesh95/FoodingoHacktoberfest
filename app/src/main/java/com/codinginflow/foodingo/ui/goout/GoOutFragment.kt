@@ -1,32 +1,21 @@
 package com.codinginflow.foodingo.ui.goout
 
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import com.codinginflow.foodingo.R
+import com.codinginflow.foodingo.abstraction.BaseFragment
+import com.codinginflow.foodingo.databinding.GoOutFragmentBinding
 
-class GoOutFragment : Fragment() {
+class GoOutFragment : BaseFragment<GoOutFragmentBinding, GoOutViewModel>() {
 
     companion object {
         fun newInstance() = GoOutFragment()
     }
 
-    private lateinit var viewModel: GoOutViewModel
+    override fun layoutResourceId(): Int = R.layout.go_out_fragment
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.go_out_fragment, container, false)
-    }
+    override fun getViewModelClass(): Class<GoOutViewModel> = GoOutViewModel::class.java
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(GoOutViewModel::class.java)
-        // TODO: Use the ViewModel
+    override fun initViewCreated() {
+        // TODO: Start your code here
     }
 
 }

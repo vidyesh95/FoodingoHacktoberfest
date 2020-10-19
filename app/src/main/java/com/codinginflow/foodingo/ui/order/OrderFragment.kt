@@ -1,42 +1,25 @@
 package com.codinginflow.foodingo.ui.order
 
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import com.codinginflow.foodingo.BottomSheetDialog
 import com.codinginflow.foodingo.R
-import com.google.android.material.appbar.MaterialToolbar
+import com.codinginflow.foodingo.abstraction.BaseFragment
+import com.codinginflow.foodingo.databinding.OrderFragmentBinding
 
-class OrderFragment : Fragment() {
+class OrderFragment : BaseFragment<OrderFragmentBinding, OrderViewModel>() {
 
     companion object {
         fun newInstance() = OrderFragment()
     }
 
-    private lateinit var viewModel: OrderViewModel
+    override fun layoutResourceId(): Int = R.layout.order_fragment
 
-    var toolbarRef : MaterialToolbar ? = null
+    override fun getViewModelClass(): Class<OrderViewModel> = OrderViewModel::class.java
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        val view =  inflater.inflate(R.layout.order_fragment, container, false)
-        toolbarRef = view.findViewById(R.id.toolbar)
-        return view
-    }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(OrderViewModel::class.java)
-        // TODO: Use the ViewModel
-
-        toolbarRef!!.setOnClickListener {
+    override fun initViewCreated() {
+        // TODO: Start your code here
+        binding.toolbar.setOnClickListener {
             val b = BottomSheetDialog()
-            b.show(requireActivity().supportFragmentManager,"bottom sheet")
+            b.show(requireActivity().supportFragmentManager, "bottom sheet")
         }
     }
 

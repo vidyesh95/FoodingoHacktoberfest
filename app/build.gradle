@@ -69,4 +69,5 @@ dependencies {
     kapt "com.google.dagger:dagger-compiler:$dagger"
     kapt "com.google.dagger:dagger-android-processor:$dagger"
 
+    implementation "com.jakewharton.timber:timber:4.7.1"
 }
