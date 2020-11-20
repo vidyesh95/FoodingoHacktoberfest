@@ -15,4 +15,5 @@
     <!---->
     <string name="search_location">Search Location</string>
     <string name="address">Borivali, Mumbai, Maharashtra</string>
+    <string name="search_hint">Restaurant, cuisine, market,movie and more.</string>
 </resources>
